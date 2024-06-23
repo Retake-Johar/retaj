@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Style Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class='bx bxs-sushi'></i>Navbsr</a>
+
+            <ul class="navlist">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Compare</a></li>
+                <li><a href="#">Specs</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Contect</a></li>
+            </ul>
+
+           <div class="nav-right">
+            <a href="#" class="btn">Book Now</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+           </div>  
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>Retaj Johar</h1>
+    </section>
+
+
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        }
+         
+    </script>
+
+
+
+
+</body>
+</html>
